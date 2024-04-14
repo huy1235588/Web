@@ -1,0 +1,277 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap'); 
+@font-face {
+    font-family: "Alata", sans-serif;
+    src: url(../fonts/Alata-Regular.ttf) format('Alata');
+    font-weight: 400;
+    font-style: normal
+}
+
+/* ********** 00 Default css ********** */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-back: #000;
+    --color-white: #fff;
+    --color-yellow: #f3dd3d;
+    --color-green: #b5e745;
+    --color-pink: #ce9090;
+    --color-grey: #263238;
+    --color-icon-star: #f5ec42;
+    --color-icon-angle: #f62f39;
+    --color-qlty: #e62117;
+    --color-timeschedule: #d43939;
+
+}
+
+ul,
+ol,
+dl {
+    list-style-position: outside;
+}
+
+ul ul {
+    list-style: inherit;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-left: .937rem;
+    margin-bottom: 0
+}
+
+nav ul,
+[class*=Menu],
+[class*=List],
+[class*=Row] {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+p {
+    font-size: inherit;
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.Title a {
+    color: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    margin-top: 0
+}
+
+h1 {
+    font-size: 1.875rem
+}
+
+h2 {
+    font-size: 1.5rem
+}
+
+h3 {
+    font-size: 1.25rem
+}
+
+h4 {
+    font-size: 1.125rem
+}
+
+h5 {
+    font-size: 1.0625rem
+}
+
+h6 {
+    font-size: 1rem
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+body {
+    background-color: #263238;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Alata', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ********** 00 Default css ********** */
+
+
+
+
+
+/* ********** 01 Style header ********** */
+header {
+    background-color: rgba(0, 0, 0, 6);
+}
+
+.logo {
+    width: calc(100% / 12);
+}
+
+.right-header{
+    width: 100%;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.row {
+    margin-left: 0;
+}
+
+/* Style menu */
+.menu{
+    width: calc( (100% / 2) + (100% / 6) + 20px);
+}
+
+.menu-items {
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+
+.menu-items-1 {
+    width: calc(100% / 7 );
+}
+
+.menu-items-2 {
+    width: calc(100% / 7 + 10px);
+}
+
+.menu-items-3 {
+    width: calc(100% / 7 - 10px);
+}
+
+.menu-items-4 {
+    width: calc(100% / 7 - 20px);
+}
+
+.menu-items a {
+    display: inline-block;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+/* style icon chevron down menu */
+.menu-items-icon {
+    position: relative;
+}
+
+.menu-items-icon > i {
+    color: #b5e745;
+}
+
+.menu-items-icon .fa-chevron-down {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+}
+
+.menu-items-icon .fa-chevron-down::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+}
+
+[class*=fa]::before {
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
+/* Style search */
+.search{
+    width: calc(100% / 4);
+    margin-right: 10px;
+    padding: 9px;
+}
+
+.search-box{
+    border: var(--color-grey) 1px solid;
+}
+
+input{
+    display: block;
+    width: 100%;
+    background-color: var(--color-back);
+    border: none;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.input:active{
+    border: none;
+}
+
+.search-button{
+    background-color: var(--color-back);
+    color: var(--color-white);
+    opacity: .5;
+    border: none;
+}
+
+input{
+    color: var(--color-white);
+}
+
+/* Style login */
+.login {
+    width: calc(100% / 12 + 10px);
+    text-align: center;
+    background: #b71c1c;
+    border: #000 solid 1px;
+    border-radius: 3px;
+}
+
+.login a {
+    display: block;
+    line-height: 35px;
+}
+
+/* Reponsive */
+@media screen and (max-width: 576px){
+    .menu{
+        display: block;
+    }
+
+    .menu-nav{
+        display: block;
+    }
+}
+/* ********** 01 Style header ********** */

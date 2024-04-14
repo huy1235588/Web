@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ff3dff;
+            padding: 20px;
+        }
+        .container p{
+            padding: 20px;
+        }
+        .container p:first-child{
+            background: rgb(41, 41, 179);
+        }
+        .container p:nth-child(2){
+            background: rgb(197, 197, 52);
+        }
+        .container p:last-child{
+            background: #d38dd3;
+            /* position: relative; */
+        }
+        .container p:last-child:hover{
+            bottom: 10px;
+            color: red;
+            background: #454545;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Khi sử dụng position absolute cho 1 phần tử và kiểm tra sau đó không có phần tử cha nào có thuộc tính khác position static thì nó sẽ lấy phần tử html để xác định khoảng cách top, left -->
+
+    <!-- Nếu có cha gần nhất có thuộc tính position khác Static thì khoảng cách top, left,... sẽ được tính toán theo phần tử này -->
+
+    <div class="container">
+        <div class="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>

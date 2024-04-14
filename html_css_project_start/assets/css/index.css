@@ -1,0 +1,540 @@
+
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* config màu sắc vào trong biến */
+:root {
+    --color-while: #fff;
+    --color-blue-lighter: #f4f9fc;
+    --color-grey: #dddddd;
+    --color-red: #ff324d;
+    --color-black: #212529;
+    --color-yellow: #f6bc3e;
+    --color-grey-lighter: #687188;
+    --color-green: #388e3c;
+
+}
+
+/* config mặc định Css dựa trên tính chất thừa thưởng interhit */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    /* color: var(); */
+    font-weight: 500;
+}
+
+
+/* Các bước style */
+/* 1. Layout (định vị mã các phần tử đúng vị trí trên web)
+2. Style chi tiết từng phần
+3. Style phần lớn trước (box model)
+4. Style chi tiết text (Style to text) */
+
+
+/* ********** Style header ********** */
+.page-link li a.active {
+    color: var(--color-red);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    background: var(--color-while);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-rights {
+    display: flex;
+    align-items: center
+}
+
+.page-link {
+    display: flex;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: -10px;
+}
+
+/* Style chi tiết logo */
+.logo a {
+    display: block;
+    width: 182px;
+}
+
+/* ********** Style chi tiết menu bên phải ********** */
+.page-link li a {
+    display: inline-block;
+    padding: 22px 10px;
+    font-size: 14px;
+    color: var(--color-black);
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.page-link li a:hover {
+    color: var(--color-red);
+}
+
+.search li i {
+    padding: 22px 10px;
+    transition: all 0.5s;
+}
+
+.search li i:hover {
+    color: var(--color-red);
+    cursor: pointer;
+}
+
+
+
+
+
+/* ********** Style main ********** */
+.banner-full {
+    background: var(--color-blue-lighter);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+
+}
+
+.banner .image {
+    width: 40%;
+}
+
+.banner .banner-content{
+    width: calc(60% - 100px);
+    margin-left: 100px;
+    padding: 0 12px;
+}
+
+.banner .image img{
+    vertical-align: middle;
+}
+/* Style chi tiết  */
+span{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-red);
+    
+}
+
+h2{
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 35px;
+}
+
+.btn-warning{
+    background: var(--color-red);
+    color: var(--color-while);
+    transition: all 0.5s;
+    border: 1px solid transparent;
+}
+
+.banner .content a:hover{
+    background: transparent;
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+
+
+
+
+
+/* ********** Style main ********** */
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+
+.product-list .product-item{
+    width: calc(25% - 24px);
+    margin-left: 24px;
+    box-shadow: rgba(150, 13, 13, 0.1) 0px 0px 7px 0px ;
+}
+
+.product-full h2{
+    margin: 50px 0;
+    font-size: 32px;
+    text-align: center  ;
+}
+
+.product-list .product-info{
+    padding: 17px;
+    margin-bottom: 30px;
+
+}
+
+.product-list .product-info h5{
+    margin-bottom: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-list .product-info h5:hover{
+    cursor: pointer;
+    color: var(--color-red);
+}
+
+.product-list .product-info span:first-child{
+    color: var(--color-red);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.product-list .product-info span:nth-child(2){
+    color: var(--color-grey-lighter);
+    text-decoration: line-through;
+}
+
+.product-list .product-info span:last-child{
+    color: var(--color-green);
+}
+
+.product-info .product-star{
+    margin-top: 8px;
+
+}
+
+.product-info .product-star i{
+    display: inline-block;
+    color: var(--color-yellow);
+    font-size: 14px;
+}
+
+.product-star:last-child::after{
+    content: '(21)';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.product-list .product-item .image{
+    position: relative;
+}
+
+.product-list .product-item .image a{
+    display: inline-block;
+}
+
+.product-list .product-item .image a:hover{
+    cursor: pointer;
+}
+
+.product-list .product-item .image a img{
+    vertical-align: middle;
+}
+
+.product-list .product-item .image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+.product-list .product-item:hover .image::before{
+    opacity: 1;
+}
+
+
+
+
+
+/* ********** Style service ********** */
+.service-full{
+    margin-top: 50px;
+}
+
+.service{
+    display: flex;
+    
+}
+
+.service .service-item{
+    position: relative;
+    text-align: center;
+    width: calc(100% / 3);
+    padding: 0 40px;
+}
+
+.service .service-item::before{
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: 0;
+    bottom: 15%;
+    width: 1px;
+    background: #dddddd;
+}
+
+.service .service-item:last-child::before{
+    content: normal
+}
+
+.service .service-item span{
+    font-size: 50px;
+    color: var(--color-grey-lighter);
+    margin-bottom: 4px;
+}
+
+.service .service-item p{
+    color: var(--color-grey-lighter);
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.service .service-item h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+/* ********** Style subcribe ********** */
+.subscribe-full{
+    margin-top: 30px;
+    background: var(--color-red);
+    padding: 50px 0;
+}
+
+.subscribe{
+    display: flex;
+    align-items: center;
+}
+
+.subscribe .subscribe-title{
+    width: 50%;
+}
+
+.subscribe form{
+    width: 50%;
+    position: relative;
+}
+
+.subscribe form input{
+    width: 100%;
+    border: none;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    height: 50px;
+}
+
+.subscribe form input:focus{
+    outline: none;
+}
+
+.subscribe form button{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: var(--color-black);
+    color: var(--color-while);
+    border: none;
+    height: 100%;
+    width: 25%;
+    font-size: 16px;
+}
+
+.subscribe form button:hover{
+    cursor: pointer;
+
+}
+
+.subscribe .subscribe-title h3{
+    color: #fff;
+    /* text-transform: capitalize; viết hoa chữ cái đầu */
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+
+
+
+/* ********** Style subcribe ********** */
+footer{
+    background: var(--color-black);
+}
+
+.row{
+    padding: 0 12px;
+}
+
+.footer-full{
+    padding: 100px 0;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer-content a, p{
+    margin-bottom: 20px;
+}
+
+.footer-content p{
+    margin-bottom: 30px;
+}
+
+.footer-content a{
+    display: inline-block;
+}
+
+.footer-1{
+    width: 25%;
+}
+
+.footer-2{
+    width: calc(50% / 3);
+}
+
+.footer h6, ul li a, p, span{
+    color: var(--color-while);
+}
+
+footer ul li, p{
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer h6{
+    margin: 10px 0 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer .social_icons ul{
+    display: flex;
+}
+
+footer .social_icons ul li{
+    padding: 12px;
+}
+
+.footer ul li i{
+    color: var(--color-while);
+}
+
+.footer-2 ul li a:hover, .footer-1 span a:hover, footer .social_icons ul li a i:hover{
+    color: var(--color-red);
+}
+
+
+
+
+
+/* ********** Style responsive ********** */
+@media screen and (max-width: 480px){
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .row > *{
+        width: 100%;
+    }
+
+    .menu-rights {
+        display: none;
+    }
+
+    .banner .banner-content{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+        order: 1;
+    }
+    .banner .image{
+        order: 2;
+    }
+
+    .btn{
+        padding: 8px 24px;
+    }
+
+    .subscribe-full {
+        padding: 20px 0;
+    }
+
+    .subscribe .subscribe-title{
+        margin-bottom: 15px;
+    }
+
+    .subscribe .subscribe-title h3{
+        font-size: 18px;
+    }
+
+    .service .service-item::before{
+        content: normal;
+    }
+
+    .subscribe form button{
+        width: none;
+    }
+
+
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-bottom: 30px;
+}
+
+.col{
+    background: red ;
+    width: calc((1200px - 40px - (20px * 11)) / 12);
+    margin-left: 20px;
+}
+
+.col-2{
+    background: green;
+    width: calc(2 * ((1200px - 40px - (20px * 11)) / 12) + (20px * 1));
+}    
+
+.col-10{
+    background: green;
+    width: calc(10 * ((1200px - 40px - (20px * 11)) / 12) + (20px * 9));
+}    
+
+
+
+
+
+

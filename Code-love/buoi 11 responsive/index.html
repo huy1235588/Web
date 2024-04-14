@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive</title>
+
+    <style>
+        .wrapper {
+            background: rgb(255, 0, 212);
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .wrapper {
+                background: rgb(255, 145, 0);
+                padding: 20px;
+            }
+        }
+
+        @media screen and (min-width: 576px) {
+            .wrapper {
+                background: rgb(29, 182, 131);
+                padding: 20px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .wrapper {
+                background: rgb(25, 54, 216);
+                padding: 20px;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            .wrapper {
+                background: rgb(204, 231, 48);
+                padding: 20px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .wrapper {
+                background: rgb(224, 30, 30);
+                padding: 20px;
+            }
+        }
+
+        /* đi từ desktop sang mobile  */
+        /* .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .box1 {
+            padding: 20px;
+            background: aqua;
+            width: 30%;
+            margin-right: 5%;
+        }
+
+        .box2 {
+            padding: 20px;
+            background: rgb(141, 255, 11);
+            width: 60%;
+            margin-right: 5%;
+        }
+
+        /* resposive */
+        /* @media screen and (max-width: 576px) {
+            .container {
+                display: block;
+            }
+
+            .box1,
+            .box2 {
+                width: 100%;
+            }
+        }  */
+
+        /* đi từ mobile sang desktop */
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .box1 {
+            padding: 20px;
+            background: aqua;
+        }
+
+        .box2 {
+            padding: 20px;
+            background: rgb(141, 255, 11);
+        }
+
+        @media screen and (min-width: 576px){
+            .container{
+                display: flex;
+            }
+            .box1{
+                width: 30%;
+                margin-right: 5%;
+            }
+            .box2{
+                width: 60%;
+                margin-right: 5%;
+            }
+        }
+        /* 576, 768, 992, 1200px */
+    </style>
+
+</head>
+
+<body>
+    <!-- 1. responsive nó được tạo mặc định nếu chỉ có html -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum molestias rem cupiditate, eos error quo
+        delectus minus illum fugit autem quaerat numquam corrupti doloribus, qui accusantium perferendis officia
+        provident.
+    </p>
+
+    <!-- 2. media query -->
+    <div class="wrapper">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nesciunt ipsum exercitationem doloremque quod
+        facere excepturi quisquam alias cumque suscipit minima, omnis eum recusandae quasi voluptatibus ducimus quam
+        veniam quis, velit reiciendis hic earum illo tempora.
+    </div>
+    <hr>
+    <!-- 3. responsive với flexbox -->
+
+    <div class="container">
+        <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ut quis labore cupiditate
+            esse ex! Error ad earum labore dignissimos.</div>
+        <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ex accusamus dolore eius nisi
+            soluta commodi! Pariatur molestiae mollitia illum.</div>
+    </div>
+
+</body>
+
+</html>
