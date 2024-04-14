@@ -3,7 +3,7 @@
 @font-face {
     font-family: "Alata", sans-serif;
     src: url(../fonts/Alata-Regular.ttf) format('Alata');
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal
 }
 
@@ -165,65 +165,76 @@ header {
 }
 
 .menu-items-1 {
-    width: calc(100% / 7 );
+    width: calc(100% / 7 - 5px);
 }
 
-.menu-items-2 {
-    width: calc(100% / 7 + 10px);
+.menu-items-2 {    
+    width: calc(100% / 7 + 14px);
 }
 
-.menu-items-3 {
-    width: calc(100% / 7 - 10px);
+.menu-items-3 {    
+    width: calc(100% / 7 + 2px);
 }
 
 .menu-items-4 {
+    width: calc(100% / 7 - 14px);
+}
+
+.menu-items-5 {
     width: calc(100% / 7 - 20px);
 }
 
 .menu-items a {
     display: inline-block;
     font-weight: 500;
-    padding: 20px 0;
+    padding: 24px 0;
 }
 
-/* style icon chevron down menu */
-.menu-items-icon {
+.active{
     position: relative;
 }
 
-.menu-items-icon > i {
-    color: #b5e745;
+.active::before{
+    position: absolute;
+    background: var(--color-green);
+    content: '';
+    height: 3px;
+    bottom: 0;
+    left: 7px;
+    right: 7px;
+}
+
+/* style icon chevron down menu */
+.menu-items-icon{
+    height: 100%;
+    width: 20px;
 }
 
 .menu-items-icon .fa-chevron-down {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-size: 12px;
+    text-align: center;
 }
 
-.menu-items-icon .fa-chevron-down::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 5px;
-}
+/* Style sub menu */
 
-[class*=fa]::before {
-    font-family: FontAwesome;
-    font-style: normal;
-}
+
 
 /* Style search */
 .search{
     width: calc(100% / 4);
     margin-right: 10px;
-    padding: 9px;
 }
 
 .search-box{
     border: var(--color-grey) 1px solid;
+    height: 100%;
+}
+
+.search-icon{
+    background: var(--color-back);
+    color: var(--color-white);
+    opacity: 0.5;
+    padding: 0 10px;
+    border: none;
 }
 
 input{
@@ -235,20 +246,18 @@ input{
     padding: 10px 0;
 }
 
-.input:active{
-    border: none;
+input:focus{
+    outline: none;
 }
 
-.search-button{
-    background-color: var(--color-back);
-    color: var(--color-white);
-    opacity: .5;
-    border: none;
+input::placeholder{
+    transition: all 0.2s ease-in-out;
 }
 
-input{
+input:focus::placeholder{
     color: var(--color-white);
 }
+
 
 /* Style login */
 .login {
@@ -257,11 +266,16 @@ input{
     background: #b71c1c;
     border: #000 solid 1px;
     border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+.login:hover{
+    background: var(--color-grey);
 }
 
 .login a {
     display: block;
-    line-height: 35px;
+    padding: 10px 12px;
 }
 
 /* Reponsive */
