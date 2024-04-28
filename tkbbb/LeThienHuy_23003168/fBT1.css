@@ -1,0 +1,41 @@
+table {
+    color: brown;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    padding: 10px;
+    display: inline-block;
+}
+
+input {
+    padding: 5px;
+    color: green;
+    font-size: 20px
+}
+
+input [type="text "] {
+    background-color: bisque;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+input [type="reset"] {
+    color: beige;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+input [type="reset"]:hover {
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid red;
+    box-shadow: 4px 4px 0px  gray;
+}
