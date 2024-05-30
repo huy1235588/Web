@@ -162,7 +162,9 @@ header {
 .menu-items {
     text-transform: uppercase;
     text-wrap: nowrap;
+    cursor: pointer;
 }
+
 
 .menu-items-1 {
     width: calc(100% / 7 - 5px);
@@ -188,6 +190,7 @@ header {
     display: inline-block;
     font-weight: 500;
     padding: 24px 0;
+    margin-right: 4px;
 }
 
 .active{
@@ -215,8 +218,30 @@ header {
 }
 
 /* Style sub menu */
+.sub-menu{
+    display: none;
+    width: 450px;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: start;
+    background-color: var(--color-white);
+}
 
+.menu-items:hover .sub-menu{
+    display: flex;
+}
 
+.sub-menu li{
+    width: 150px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.sub-menu a{
+    color: var(--color-back);
+    padding: 10px 0;
+}
 
 /* Style search */
 .search{
@@ -244,6 +269,10 @@ input{
     border: none;
     font-weight: 300;
     padding: 10px 0;
+}
+
+input[type=text]{
+    color: var(--color-white);
 }
 
 input:focus{
