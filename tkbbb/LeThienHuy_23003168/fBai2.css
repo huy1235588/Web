@@ -1,0 +1,52 @@
+table {
+    color: brown;
+    font-size: 20px;
+
+}
+
+td {}
+
+input {
+    padding: 5px;
+    border: 2px solid green;
+    font-size: 20px;
+    width: 100%;
+}
+
+input [type="text "] {
+    background-color: bisque;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+select{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+.submit{
+    margin-left: 100px;
+
+}
+
+input[type="submit"] {
+    margin-left: 100px;
+    color: rgb(150, 150, 36);
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    border-radius: 10px;
+    background-color: black;
+    border: 2px solid olive;
+    box-shadow: 4px 4px 0px gray;
+}
