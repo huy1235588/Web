@@ -1,0 +1,26 @@
+body {
+    background: url(HinhAnh/anhwed/h3.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-signup {
+    background-image: url();
+    width: 40%;
+}
+
+.form-group {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=password] {
+    width: 60%;
+}
+
+.submit {
+    margin: 0 auto;
+}

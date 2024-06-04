@@ -269,8 +269,23 @@ input:focus::placeholder{
     transition: all .2s ease-in-out;
 }
 
+@keyframes testttt {
+    from{
+        background-color: #b71c1c;
+    }
+    to{
+        background-color: #b5e745;
+    }
+}
+
+
 .login:hover{
     background: var(--color-grey);
+    animation-name: testttt;
+    animation-duration: 1s;
+    animation-delay: -10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .login a {

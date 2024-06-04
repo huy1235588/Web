@@ -1,0 +1,35 @@
+body{
+    background: url(HinhAnh/anhwed/h3.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    max-width: 400px;
+    background: #FF33CC;
+    border: #65004c;
+    flex-grow: 1;
+    border-radius: 15px;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.8);
+}
+
+h1{
+    font-size: 30px;
+    color: beige;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.form-input{
+    width: 90%;
+}
+tr{
+    display: flex;
+    justify-content: center;
+}

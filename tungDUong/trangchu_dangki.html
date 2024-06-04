@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="trangchu_dangky.css">
+</head>
+
+<body>
+    <div class="form-signup">
+        <h2>Đăng Ký</h2>
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            <form id="dangky">
+                <label for="username"> Họ tên:</label>
+                <input type="text" id="fullname" name="fullname" required><br>
+                <label for="phonenumber"> Số Điện Thoại*:</label>
+                <input type="text" id="phonenumber" name="phonenumber" required><br>
+                <label for="Email"> Email*:</label>
+                <input type="text" id="Email" name="Email" required><br>
+                <label for="diachi"> Địa chỉ:</label>
+                <input type="text" id="diachi" name="txdiachi" required><br>
+                <label for="gioitinh"> Giới tính</label>
+                <input type="radio" name="rdgt" value="name" id="nam">
+                <label for="nam">Nam</label>
+                <input type="radio" name="rdgt" value="name" id="nu">
+                <label for="nu">Nữ</label>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Thông tin tài khoản</legend>
+            <form id="register-form">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button class="submit" type="submit">Đăng Ký</button>
+            </form>
+        </fieldset>
+        <p>Đã có tài khoản? <a href="trangchu_dangnhap.html">Đăng nhập</a></p>
+        <p><a href="trangchu.html">Thoát</a></p>
+    </div>
+    <script src="trangchu.js"></script>
+
+</body>
+
+</html>

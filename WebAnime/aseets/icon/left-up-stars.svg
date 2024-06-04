@@ -1,0 +1,7 @@
+<svg class="left-up-stars" viewBox="0 0 50 36" xmlns="http://www.w3.org/2000/svg" width="50px">
+    <g transform="translate(2 -7)" fill="none" fill-rule="evenodd">
+        <path stroke="#FAB818" stroke-width="2" d="m15.225 33.094.214 1.078-.744.833 1.083-.215.853.733-.237-1.068.73-.855-1.068.24z"></path>
+        <path stroke="#FFF" stroke-width="2" d="m6.602 16.97.24 1.124-.837.868 1.218-.224.96.764-.267-1.113.822-.891-1.202.25z"></path>
+        <path stroke="#FAB818" stroke-width="2.4" d="m36.534 15.907.088 1.565-1.215 1.028 1.57-.09 1.059 1.205-.123-1.554 1.201-1.063-1.555.127z"></path>
+    </g>
+</svg>
