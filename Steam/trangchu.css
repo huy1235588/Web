@@ -173,6 +173,30 @@ header {
 
 
 
+/* style menu inside */
+.menu-inside{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 716px;
+  height: 100%;
+}
+.menu-inside-discount-percent {
+  color: #000;
+}
+
+.menu-inside-discount-percent::before {
+  content: "\2010";
+  margin-right: -4px;
+}
+
+.menu-inside-discount-percent::after {
+  content: "\ff05";
+  margin-left: -4px;
+}
+
+/* style menu-inside */
+
 /* style menu tray */
 .menu-tray {
   display: flex;
