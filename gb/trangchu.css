@@ -234,17 +234,18 @@ nav {
 
 .product {
     display: flex;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .product-item {
-    margin: 0 15px;
-    box-shadow: 0 5px 5px rgba(59, 59, 59, 0.4);
+    width: calc(25% - 22.5px);
+    margin: 0 15px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
 }
 
 .product-item:hover {
-    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .product-item h5,
@@ -260,13 +261,13 @@ nav {
     color: #000;
 }
 
-.product-item h5 a {
+.product-item h5 {
     transition: all 0.3s;
     color: #000;
 }
 
-.product-item h5 a:hover {
-    color: red;
+.product-item a:hover h5{
+    color: #fd6282;
 }
 
 .product-item span {
@@ -274,11 +275,13 @@ nav {
     color: red;
 }
 
-.product-item:first-child {
+.product-item:first-child,
+.product-item:nth-child(5){
     margin-left: 0;
 }
 
-.product-item:last-child {
+.product-item:last-child,
+.product-item:nth-child(4) {
     margin-right: 0;
 }
 
@@ -310,18 +313,19 @@ nav {
     color: #fff;
 }
 
-.read-more{
+.read-more {
     background-color: #fd6282;
     padding: 10px;
     transition: all 0.3s;
     max-width: 30px;
     margin: 0 30px;
 }
-.read-more a{
+
+.read-more a {
     padding: 10px;
     color: #fff;
 }
 
-.read-more:hover{
+.read-more:hover {
     background-color: orange;
 }
