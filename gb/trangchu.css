@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item {
+    height: 100%;
+}
+
+.logo {
+    width: 50px;
+}
+
+.site {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.title {
+    display: inline-block;
+    height: 100%;
+    font-size: 24px;
+    color: #fd6282;
+    text-transform: uppercase;
+}
+
+.search {
+    position: relative;
+    width: 320px;
+}
+
+.search-input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+
+.search-input:focus {
+    outline: none !important;
+    border: 1px solid #fd6282;
+}
+
+.search-icon {
+    width: 18px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.search-icon:hover path {
+    fill: #fd6282;
+}
+
+
+
+
+
+/* menu */
+nav {
+    border-bottom: #fd6282 5px solid;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+}
+
+.menu-item:first-child {
+    margin-left: 30px;
+}
+
+.menu-item-link {
+    display: inline-block;
+    color: #000;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.menu-item:first-child .menu-item-link {
+    color: #fd6282;
+}
+
+.menu-item-link:hover {
+    color: #fd6282;
+}
+
+.sub-menu-icon {
+    position: absolute;
+    top: 13px;
+}
+
+.sub-menu-icon path {
+    transition: all 0.3s;
+
+}
+
+.menu-item-link:hover .sub-menu-icon path {
+    fill: #fd6282;
+
+}
+
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 10px 20px;
+    margin-left: 30px;
+    color: #000;
+    box-shadow: 0 0.1875rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.sub-menu-link {
+    color: #000;
+    transition: all 0.3s;
+}
+
+.sub-menu-link:hover {
+    color: #fd6282;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+
+
+
+
+/* banner */
+.banner {
+    width: 80%;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+
+
+/* service */
+.service {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.service-item {
+    display: flex;
+}
+
+.service-icon {
+    width: 25px;
+}
+
+.service-link {
+    display: flex;
+    align-items: center;
+}
+
+
+/* home banner */
+.home-banner {
+    display: flex;
+    margin-top: 20px;
+}
+
+.home-banner-item {
+    padding: 0 10px;
+
+}
+
+.home-banner-link {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.home-banner-link img {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.home-banner-link img:hover {
+    transform: scale(1.1);
+    z-index: -10;
+}
+
+
+
+
+
+
+/* main */
+.main-header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: #fd6282 3px solid;
+    margin: 20px 0;
+}
+
+.main-header a {
+    color: #000;
+}
+
+.product {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.product-item {
+    margin: 0 15px;
+    box-shadow: 0 5px 5px rgba(59, 59, 59, 0.4);
+    transition: all 0.3s;
+}
+
+.product-item:hover {
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.4);
+}
+
+.product-item h5,
+.product-item span,
+.product-item nav {
+    display: flex;
+    justify-content: center;
+}
+
+.product-item h5 {
+    margin: 12px 10px 8px;
+    transition: all 0.3s;
+    color: #000;
+}
+
+.product-item h5 a {
+    transition: all 0.3s;
+    color: #000;
+}
+
+.product-item h5 a:hover {
+    color: red;
+}
+
+.product-item span {
+    margin-bottom: 8px;
+    color: red;
+}
+
+.product-item:first-child {
+    margin-left: 0;
+}
+
+.product-item:last-child {
+    margin-right: 0;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item span {
+    padding: 0 5px;
+    margin-right: 3px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.nav-item span:hover {
+    background-color: #23CC57;
+    color: #fff;
+}
+
+.nav-item:first-child span {
+    background-color: #23CC57;
+    color: #fff;
+}
+
+.read-more{
+    background-color: #fd6282;
+    padding: 10px;
+    transition: all 0.3s;
+    max-width: 30px;
+    margin: 0 30px;
+}
+.read-more a{
+    padding: 10px;
+    color: #fff;
+}
+
+.read-more:hover{
+    background-color: orange;
+}
