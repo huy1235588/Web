@@ -1,0 +1,234 @@
+#anhgau{
+    width: 80%;
+    height: 60px;
+    
+}
+#g1{
+    font-size: 30px; 
+    color: pink;
+    font-weight: bold;
+}
+#dc{
+    padding-bottom: 10px;
+}
+.c1{
+    width: 100%;
+    padding-left: 120px;  
+}
+header{
+  
+}
+nav{
+    height: 60px;
+ background-color: white;
+    width: 100%;
+    z-index:1000;
+    position: sticky;
+    top: 0px;
+text-align: center;
+line-height: 70px;
+border-bottom: 7px solid red;
+text-align: center;
+}
+.c2{
+    list-style-type: none;
+    display: flex; 
+    padding-left: 250px ;
+    
+}
+.c2 li{
+   padding-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.c2 li:hover{
+    color: pink;
+}
+aside{
+   
+}
+.c3{
+    display: none;
+    list-style-type: none;
+   
+    position: absolute;
+    top: 35px;
+
+}
+.c3 li{
+    color: black;
+    
+}
+.c2 li .c3{
+   
+    
+  
+}
+.c2 li:hover .c3{
+    display: block;
+ padding-left: 0px;
+   padding-top:10px;
+}
+.ChonHinh {  position: absolute;  left: 0;   z-index: 900;   width: 100%;   bottom: 0;  }
+.ChonHinh label { cursor: pointer;    display: inline-block;    width: 16px;    height: 16px;
+    background: #fff;    border-radius: 50px;    margin: 10px;  transition: all .3s ease;
+    &:hover { background:deeppink; } }
+.Hinh {width: 1300px; height:100%; position: absolute; left: 100%; background-size:cover; margin: 0px;
+    transition: left 0s .75s;}
+[id^="Hinh"]:checked + .Hinh {left: 0;  z-index: 100;  transition: left .65s ease-out; }
+#d2{height:60%;    width: 80%;    position: relative; overflow: hidden; text-align: center;max-width: 1200px;
+    margin: 0 auto;
+}
+.Hinh1 { background-image: url("HinhAnh/gau2.png");width: 100%; }
+.Hinh2 { background-image: url("HinhAnh/gau3.jpg"); width: 100%;}
+.Hinh3 { background-image: url("HinhAnh/gau4.jpg"); width: 100%;}
+.Hinh4 { background-image: url("HinhAnh/gau5.jpg"); width: 100%;}
+#d3{
+   
+    padding-left:90px;
+
+    
+}
+#d3 tr td {
+    padding-left: 25px;
+       font-weight: bold;
+   font-size: 20px;
+    
+    
+}
+#d3 tr td:hover{
+    color: pink;
+}
+#d4 tr td {
+    padding-left: 155px;
+}
+#tt img{
+    width: 110%;
+    height: 150px;
+   
+}
+#yy img{
+    width: 110%;
+    height: 150px;
+}
+#oo img{
+    width: 110%;
+    height: 150px;
+}
+#d4 img{
+    transition: transform 0.5s ease ;
+}
+#d4 tr td img:hover{
+    transform: scale(1.2);
+}
+
+.sec table tr img{
+    width: 70%;
+}
+.sec table tr #ee{
+   
+    border-bottom: 5px solid pink;
+}
+.sec table tr td{
+    padding-top: 10px;
+    padding-left: 80px;
+}
+.sec table tr td:hover{
+    box-shadow:0px 2px 2px 2px grey;
+}
+#ee{
+    font-weight: bold;
+    font-size:30px;
+    text-align: center;
+    border-bottom: 3px solid pink;
+}
+.sec button{
+    background-color: palevioletred;
+    color: white;
+    margin-left: 650px;
+    height: 50px;
+    font-size: 20px;
+}
+.ll{
+    font-weight: bold;
+    font-size: 17px;
+}
+.vv{
+    color: gray;
+    font-size: 15px;
+}
+
+#mj table{
+    padding-left: 280px;
+    width: 90%;
+}
+#mj button{
+    background-color: palevioletred;
+    color: white;
+    margin-left: 650px;
+    height: 50px;
+    font-size: 20px;
+}
+.mm{
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 90px;
+}
+footer table tr td p{
+    font-size: 15px;
+}
+#ttt{
+    font-size: 20px;
+    padding-left: 60px;
+    color: pink;
+    font-weight: bold;
+    padding-top: 17px ;
+}
+.mm li{
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+.jjj li{
+    list-style-type: none;
+    font-size: 20px;
+}
+#uuu{
+    font-size: 20px;
+    padding-left: 150px;
+    color: pink;
+    font-weight: bold;
+    
+}
+.mem{
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 50px;
+}
+#ta{
+    font-size: 20px;
+    padding-left: 110px;
+    color: pink;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.cc{
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 50px;
+}
+#ii{
+    font-size: 20px;
+    padding-left: 110px;
+    color: pink;
+    font-weight: bold;
+    padding-top: 50px;
+}
+footer table{
+    border-bottom:3px pink solid;
+    border-top: 7px pink solid;
+    
+}
+footer{
+    padding-top: 10px;
+}

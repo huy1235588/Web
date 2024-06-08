@@ -70,6 +70,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
 }
 
 .header-item {
@@ -474,6 +475,7 @@ section {
 .size {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .size-item span {
@@ -513,7 +515,6 @@ section {
 .read-more a:hover {
     background-color: orange;
 }
-
 
 
 /* post */
@@ -557,6 +558,67 @@ section {
 }
 
 
+/* support */
+.support {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 23;
+}
+
+.support-list{
+    position: relative;
+}
+
+.support-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.support-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+.support-item svg {
+    margin: 0;
+    transition: margin-right .25s cubic-bezier(.4, 0, .2, 1)
+}
+
+.support-text {
+    width: 0;
+    color: #fff;
+    overflow: hidden;
+    transition: width .25s cubic-bezier(.4, 0, .2, 1);
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.support-item:not(.support-item:hover){
+    right: 0;
+}
+
+.support-item:hover a {
+    width: 200px;
+    border-radius: 30px;
+}
+
+.support-item:hover svg {
+    justify-content: start;
+    margin: 0 8px;
+}
+
+.support-item:hover span {
+    overflow: visible;
+    width: 168px;
+}
 
 
 /* footer */
